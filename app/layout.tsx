@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="en" className={RobotoFont.className}>
       <body className="h-svh w-svw bg-gray-700 px-40 py-20">
         <main className="h-full w-full bg-gray-600 rounded-lg text-gray-100">
-          <Header.Root>
-            <Header.Nav />
+          <Header.Root className="px-10 pt-10 flex gap-4 justify-between items-center">
+            <Header.Nav className="flex gap-2" />
           </Header.Root>
           {children}
         </main>

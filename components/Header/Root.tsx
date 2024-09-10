@@ -1,13 +1,11 @@
 import { Svg } from "@/components";
 import { ComponentProps } from "react";
 
-type Props = ComponentProps<"header"> & {
-  className?: never;
-};
+type Props = ComponentProps<"header">;
 
-export function Root({ children, className, ...props }: Props) {
+export function Root({ children, ...props }: Props) {
   return (
-    <header className="px-10 pt-10 flex gap-4 justify-between" {...props}>
+    <header {...props}>
       <Svg.Logo />
       {children}
     </header>
