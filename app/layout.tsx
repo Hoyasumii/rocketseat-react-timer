@@ -20,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={RobotoFont.className}>
       <body className="h-svh w-svw bg-gray-700 px-40 py-20">
-        <main className="h-full w-full bg-gray-600 rounded-lg pt-10 text-gray-100">
-          <Header.Root className="px-10"></Header.Root>
+        <main className="h-full w-full bg-gray-600 rounded-lg text-gray-100">
+          <Header.Root>
+            <Header.Nav />
+          </Header.Root>
           {children}
         </main>
       </body>
